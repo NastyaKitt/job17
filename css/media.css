@@ -1,0 +1,329 @@
+@media (max-width:1500px) {
+    .heroSection {
+        & img {
+            width: 30rem;
+        }
+    }
+    .price {
+        & .priceList {
+            padding: 1.5rem 2rem 2rem 2rem;
+        }
+    }
+    
+    
+    
+}
+@media (max-width:1300px) {
+    main {
+        width: calc(100% - 10rem);
+    }
+    .pamatka {
+        & .list {
+            & .item {
+                width: 30%;
+            }
+        }
+    }
+    .me {
+        & span {
+            & form {
+                & span {
+                    width: 45%;
+                }
+            }
+        }
+    }
+    header {
+        & .itemss {
+            &.show {
+                width: 30rem;
+                height: 20rem;
+            }
+        }
+    }
+    footer {
+        padding: 2rem 4rem;
+    }
+    
+    
+    
+}
+@media (max-width:1024px) {
+    html {
+        font-size: 14px;
+    }    
+    .heroSection {
+        & img {
+            position: absolute;
+            right: 10rem;
+            top: 15rem;
+        }
+    }
+    .price {
+        & .priceList {
+            background-image: none;
+        }
+    }
+    .me {
+        & span {
+            & form {
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+                & span {
+                    width: 100%;
+                    margin: 0.25rem;
+                    & input {
+                        margin-bottom: 0.5rem;
+                        &.ok {
+                            margin-top: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .whyMe {
+        & .slider {
+            & .itemx {
+                &.show {
+                    height: 25rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    
+    .me {
+        flex-direction: column;
+        align-items: center;
+        & img {
+            margin-bottom: 2rem;
+        }
+    }
+    .pamatka {
+        & button {
+            width: 40%;
+        }
+    }
+    .heroSection {
+        & button {
+            width: 40%;
+        }
+    }
+    
+    
+    
+}
+@media (max-width:968px) {
+    .company {
+        & .slider {
+            & .itemm {
+                &.show {
+                    max-height: 40%;
+                }
+            }
+        }
+    }
+    
+    
+}
+@media (max-width:900px) {
+    html {
+        font-size: 12px;
+    }
+    
+}
+@media (max-width:768px) {
+    main {
+        width: calc(100% - 6rem);
+    }
+    .company {
+        & .slider {
+            padding: 1rem 2rem;
+        }
+    }
+    .pamatka {
+        & .list {
+            & .item {
+                width: 40%;
+            }
+        }
+    }
+    .pamatka {
+        & .list {
+            justify-content: space-around;
+        }
+    }
+    
+    
+    
+}
+@media (max-width:690px) {
+    .whyMe {
+        & .slider {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            & .itemx {
+                &.show {
+                    margin-top: 2rem;
+                    width: 40%;
+                }
+            }
+        }
+    }
+    header {
+        & .itemss {
+            right: 1rem;
+            bottom: 1rem;
+        }
+    }
+    header {
+        & .itemss {
+            &.show {
+                width: 25rem;
+            }
+        }
+    }
+    
+}
+@media (max-width: 600px) {
+    .price {
+        & .priceList {
+            & .items {
+                & .item {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+    .heroSection {
+        & img {
+            right: 5rem;
+            top: 15rem;
+        }
+    }
+
+    
+}
+@media (max-width: 425px) {
+    html {
+        font-size: 10px;
+    }
+    .heroSection {
+        height: 45rem;
+        padding: 2rem 0 7rem;
+    }
+    .heroSection {
+        & img {
+            width: 20rem;
+        }
+    }
+    .heroSection {
+        & button {
+            width: 50%;
+        }
+    }
+    .company {
+        
+        & .slider {
+            & .itemm {
+                &.show {
+                    max-height: 35%;
+                }
+            }
+        }
+    }
+    .company {
+        height: 6rem;
+        bottom: 3rem;
+    }
+    .price {
+        & .priceList {
+            & .items {
+                & .item {
+                    & p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .pamatka {
+        & .list {
+            & .item {
+                width: 60%;
+            }
+        }
+    }
+    .pamatka {
+        & button {
+            width: 50%;
+            margin: 2rem 0 2rem;
+        }
+    }
+    
+    .whyMe {
+        & .slider {
+            & .itemx {
+                &.show {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    header {
+        & .itemss {
+            &.show {
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+    }
+    .politic {
+        &.show {
+            & .politica {
+                width: 80%;
+                padding: 1rem;
+                height: 80%;
+                overflow-y: scroll;
+                background-color: #fff;
+            }
+        }
+    }
+    
+    
+}
+@media (max-width:375px) {
+    main {
+        width: calc(100% - 4rem);
+    }    
+    .heroSection {
+        & img {
+            width: 15rem;
+            top: 20rem;
+        }
+    }
+
+}
+@media (max-width:350px) {
+    .heroSection {
+        height: 50rem;
+    }
+    .heroSection {
+        & img {
+            width: 15rem;
+            top: 27rem;
+        }
+    }
+    .pamatka {
+        & .list {
+            & .item {
+                width: 80%;
+            }
+        }
+    }
+}

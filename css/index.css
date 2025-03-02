@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Sans";
+    font-style: italic;
+}
+body {
+    display: grid;
+    justify-items: center;
+    background-image: url(img/mainer.jpg);
+    background-attachment: fixed;
+}
+main {
+    background-color: #fff;
+    width: calc(100% - 20rem);
+    padding: 0 2rem;
+    display: grid;
+    justify-items: center;
+    border-left: 5px solid #000;
+    box-shadow: -5px -5px 23px 22px rgba(34, 60, 80, 0.21) ;
+    border-right: 5px solid #000;
+}
+button,.ok {
+    cursor: pointer;
+}
+/* Heder */
+header {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    visibility: hidden;
+    z-index: 999;
+    & .itemss {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #fff;
+        &.show {
+            width: 35rem;
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #000;
+            height: 25rem;
+            border-radius: 2rem;
+            justify-content: space-between;
+            opacity: 1;
+            transition: opacity 2s ,visibility 2s;
+            visibility: visible;
+            & h2 {
+                padding-bottom: 1rem;
+            }
+            & span {
+                width: 100%;
+                display: grid;
+                justify-items: center;
+                & p{
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}
+/* line */
+.line {
+    width: calc(100% + 4rem);
+    height: 1px;
+    background-color: #000;
+}
+/* heroSection */
+.heroSection {
+    height: 50rem;
+    width: 100%;
+    padding: 5rem 0 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & img {
+        position: absolute;
+        right: 20rem;
+        top: 10rem;
+        width: 40rem;
+    }
+    & span {
+        z-index: 25;
+        & h1 {
+            font-size: 3rem;
+        }
+        & h2 {
+            font-size: 2rem;
+        }
+        & span {
+            & p {
+                margin-left: 2rem;
+                font-size: 1.5rem;
+                padding-top: 0.5rem;
+            }
+        }
+    }
+    & button {
+        width: 25%;
+        background-color: #64E52D;
+        height: 4rem;
+        font-size: 1.25rem;
+        &:hover {
+            box-shadow: 0px 0px 25px 5px #0000003d;
+            transition: all 0.5s;
+        }
+        &:active {
+            box-shadow: 0px 0px 25px 5px #0000003d inset ;
+            transition: all 0.5s;
+        }
+    }
+}
+/* company */
+.company {
+    width: 100%;
+    overflow: hidden;
+    background-color: aliceblue;
+    height: 10rem;
+    position: relative;
+    bottom: 5rem;
+    border-radius: 10rem;
+    border: 1px solid #000;
+    & .slider {
+        width: 100%;
+        height: 100%;
+        padding: 1rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .itemm {
+            height: 100%;
+            width: 0;
+            max-width: 0;
+            max-height: 0;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            left: 2rem;
+            &.show {
+                width: auto;
+                max-width: 100%;
+                max-height: 50%;
+                height: 100%;
+                visibility: visible;
+                position: relative;
+                opacity: 1;
+                left: 0;
+                transition: all 1s;
+                & img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+/* price */
+.price {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+    & h1 {
+        margin-bottom: 2rem;
+    }
+    & .priceList {
+        border: 1px solid #000;
+        background-color: #eee;
+        background-image: url(img/зрщт.png);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.5rem 2rem 2rem 5rem;
+        box-shadow: -5px 10px 4px 0 #00000044;
+        & h2 {
+            font-size: 2rem;
+        }
+        & button {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            color: #000;
+            
+        }
+        & .items {
+            width: 100%;
+            margin-top: 1rem;
+            & .item {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+/* pamatka */
+.pamatka {
+    width: 100%;
+    text-align: center;
+    & h1 {
+        margin: 2rem 0 4rem;
+    }
+    & .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & .item {
+            width: 26%;
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border: 1px solid #000;
+            background-color: aliceblue;
+            margin-bottom: 2rem;
+            &.p1 {
+                background-image: url(img/pamitka.jpg);
+                background-size: cover;
+            }
+            &.p2 {
+                background-image: url(img/pamitka2.jpg);
+                background-size: cover;
+            }
+            &.p3 {
+                background-image: url(img/pamitka3.jpg);
+                background-size: cover;
+            }
+            &.p4 {
+                background-image: url(img/pamitka4.jpg);
+                background-size: cover;
+            }
+            &.p5 {
+                background-image: url(img/pamitka5.jpg);
+                background-size: cover;
+            }
+            &.p6 {
+                background-image: url(img/pamitka6.jpg);
+                background-size: cover;
+            }
+            &.p7 {
+                background-image: url(img/pamitka7.jpg);
+                background-size: cover;
+            }
+            &.p8 {
+                background-image: url(img/pamitka8.jpg);
+                background-size: cover;
+            }
+            &.p9 {
+                background-image: url(img/pamitka9.jpg);
+                background-size: cover;
+            }
+            & h2 {
+                background-color: #fff;
+            }
+            &:hover {
+                box-shadow: 0px 0px 100px 17px #fff inset;
+                justify-content: space-between;
+                transition: all 2s;
+                transform: scale(1.5);
+                & span ,.line {
+                    width: 100%;
+                    visibility: visible;
+                    background-color: aliceblue;
+                    opacity: 1;
+                    height: auto;
+                    width: auto;
+                    transition: all 1s;
+                    &.line {
+                    background-color: #000;
+                        height: 1px;
+                        width: 100%;
+                    }
+                }
+                
+            }
+            &:active {
+                box-shadow: 0px 0px 100px 17px #fff inset;
+                justify-content: space-between;
+                transition: all 2s;
+                transform: scale(1.5);
+                & span ,.line {
+                    width: 100%;
+                    visibility: visible;
+                    background-color: aliceblue;
+                    opacity: 1;
+                    height: auto;
+                    width: auto;
+                    transition: all 1s;
+                    &.line {
+                    background-color: #000;
+                        height: 1px;
+                        width: 100%;
+                    }
+                }
+                
+            }
+            & span ,.line {
+                visibility: hidden;
+                opacity: 0;
+                height: 0;
+                width: 0;
+            }
+        }
+    }
+    & button {
+        width: 26%;
+        height: 5rem;
+        border-radius: 1rem;
+        margin: 2rem 0 5rem;
+        background-color: #64E52D;
+        font-size: 1.5rem;
+        border: 1px solid #000;
+        &:hover {
+            box-shadow: 0px 0px 25px 5px #0000003d;
+            transition: all 0.5s;
+        }
+        &:active {
+            box-shadow: 0px 0px 25px 5px #0000003d inset ;
+            transition: all 0.5s;
+        }
+
+    }
+}
+/* whyMe */
+.whyMe {
+    width: 100%;
+    text-align: center;
+    & h1 {
+        margin: 2rem 0 4rem;
+    }
+    & .slider {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        & .itemx {
+            width: 0;
+            height: 0;
+            opacity: 0;
+            position: absolute;
+            visibility: hidden;
+            left: 2rem;
+            &.show {
+                left: 0;
+                width: 30%;
+                height: 20rem;
+                opacity: 1;
+                position: relative;
+                visibility: visible;
+                background-color: aliceblue;
+                display: flex;
+                transition: left 1s, opacity 1s, visibility 1s;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem;
+                border: 1px solid #000;
+            }
+        }
+    }
+}
+/* me */
+.me {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    & img {
+        width: 20rem;
+        margin-right: 2rem;
+    }
+    & span {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        & .text {
+            & p {
+                padding-bottom: 1rem;
+            }
+        }
+        & form {
+            height: 15rem;
+            background-color: aliceblue;
+            padding: 2rem;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: space-between;
+            & span {
+                display: flex;
+                width: 40%;
+                justify-content: space-between;
+                & input {
+                    background-color: #fff;
+                    padding-left: 1rem;
+                    border: 1px solid #000;
+                    font-size: 1.25rem;
+                    height: 4rem;
+                    &.ok {
+                        background-color: #64E52D;
+                        padding: 0;
+                        &:hover {
+                            box-shadow: 0px 0px 25px 5px #0000003d;
+                            transition: all 0.5s;
+                        }
+                        &:active {
+                            box-shadow: 0px 0px 25px 5px #0000003d inset ;
+                            transition: all 0.5s;
+                        }
+                
+                    }
+                }
+            }
+        }
+    }
+}
+/* amp */
+.map {
+    width: 100%;
+    margin: 5rem 0 2rem;
+}
+/* footer */
+footer {
+    padding: 2rem 10rem;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #000;
+    & h1 {
+        font-size: 3rem;
+    }
+    & button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: #64c43c;
+            transition: all 1s;
+        }
+        &:active {
+            color: #64E52D;
+            transition: all 0.1s;
+        }
+    }
+}
+/* politic */
+.politic {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000096;
+    visibility: hidden;
+    opacity: 0;
+    right: 100rem;
+    z-index: 99999;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        right: 0;
+        transition: all 1s;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        & button {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            border: none;
+            background-color: transparent;
+            &:hover {
+                & path {
+                    stroke: #64c43c;
+                }
+            }
+            & path {
+                stroke: #fff;
+            }
+        }
+        & .politica {
+            width: 60%;
+            padding: 1rem;
+            height: 80%;
+            overflow-y: scroll;
+            background-color: #fff;
+        }
+    }
+}
